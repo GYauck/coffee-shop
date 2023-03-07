@@ -1,0 +1,308 @@
+.homeContainer {
+    width: 64vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+/* First Part */
+.homeHeader {
+    width: 100%;
+    height: 600px;
+    background-image: url("../../assets/home/desktop/image-hero-coffeepress.jpg");
+    border-radius: 20px;
+    margin-top: 6vh;
+}
+
+.textContainer {
+    width: 493px;
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+
+.textH1 {
+    color: #FEFCF7;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 72px;
+}
+
+.textBody {
+    width: 440px;
+    height: 78px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    opacity: 0.8;
+    color: #FEFCF7;
+}
+
+.tagContainer {
+    display: flex;
+    width: 217px;
+    height: 56px;
+    background-color: #0E8784;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.linkTag {
+    color: #FEFCF7;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* Second Part */
+
+.productsContainer {
+    width: 1111px;
+    height: 525px;
+    position: relative;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.ourCollection {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 150px;
+    font-weight: 900;
+    background: #83888F;
+    background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.1) 0%, #FEFCF7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+}
+
+.productsGrid {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12vh;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffeeImg {
+    width: 255px;
+    height: 193px;
+}
+
+.coffeeName {
+    color: #333D4B;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.coffeeDescription {
+    width: 255px;
+    height: 78px;
+    font-family: 'Barlow', sans-serif;
+    color: #333D4B;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* Third Part "Why choose us" */
+
+.whyContainer {
+    width: 1280px;
+    height: 728px;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15vh;
+}
+
+.whyContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: #2C343E;
+}
+
+.whyH1 {
+    position: relative;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #FEFCF7;
+    margin-top: 10vh;
+    margin-bottom: 0;
+}
+
+.whyP {
+    width: 540px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+.whyGrid {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 10px;
+}
+
+.whyCard {
+    width: 350px;
+    height: 382px;
+    background-color: #0E8784;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyCardImg {
+    width: 72px;
+    height: 72px;
+}
+
+.whyCardTitle {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: #FEFCF7;
+}
+
+.whyCardDescription {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+/* Part Four "How its Works" */
+
+.howContainer {
+    width: 1045px;
+    height: 565px;
+}
+
+.howH1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: #83888F;
+}
+
+.howLineContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 760px;
+}
+
+.howLine {
+    background-color: #FDD6BA;
+    width: 760px;
+    height: 2px;
+    position: absolute;
+    top: 10px;
+    z-index: -1;
+}
+
+.howCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #0E8784;
+    background-color: #FEFCF7;
+}
+
+.howGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    margin-bottom: 5vh;
+}
+
+.howCard {
+    width: 285px;
+    height: 355px;
+}
+
+.howNumber {
+    color: #FDD6BA;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 72px;
+}
+
+.howTitle {
+    width: 255px;
+    color: #333D4B;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.howDescription {
+    color: #333D4B;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2C343E;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.logoImg {
+    width: 235px;
+    height: 25px;
+    filter: invert(100%) sepia(0%) hue-rotate(180deg) saturate(100%);
+
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 24px;
+    width: 120px;
+}

@@ -5,6 +5,8 @@
     background-color: white;
     width: 100vw;
     height: 50px;
+    position: fixed;
+    z-index: 2;
 }
 
 .navUl {
