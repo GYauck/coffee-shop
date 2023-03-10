@@ -2,15 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./home.module.css";
 import data from "../../data.json";
-import logo from "../../assets/shared/desktop/logo.svg";
-import facebookIcon from "../../assets/shared/desktop/icon-facebook.svg";
-import instagramIcon from "../../assets/shared/desktop/icon-instagram.svg";
-import twitterIcon from "../../assets/shared/desktop/icon-twitter.svg";
 
 const Home = () => {
   const [coffees] = useState(data.coffees);
   const [whyCards] = useState(data.whyReasons);
-  const [howCards] = useState(data.howItWorks)
+  const [howCards] = useState(data.howItWorks);
   return (
     <div className={style.homeContainer}>
       <div className={style.homeHeader}>
@@ -56,46 +52,41 @@ const Home = () => {
           growers to give you a more impactful experience on every level.
         </p>
         <div className={style.whyGrid}>
-            {whyCards.map((card, index) => (
-              <div className={style.whyCard} key={index}>
-                <img className={style.whyCardImg} src={card.image} alt="cardImg"/>
-                <h1 className={style.whyCardTitle}>{card.title}</h1>
-                <p className={style.whyCardDescription}>{card.description}</p>
-              </div>
-            ))}
+          {whyCards.map((card, index) => (
+            <div className={style.whyCard} key={index}>
+              <img
+                className={style.whyCardImg}
+                src={card.image}
+                alt="cardImg"
+              />
+              <h1 className={style.whyCardTitle}>{card.title}</h1>
+              <p className={style.whyCardDescription}>{card.description}</p>
+            </div>
+          ))}
         </div>
       </div>
       <div className={style.howContainer}>
         <h1 className={style.howH1}>How it works</h1>
         <div className={style.howLineContainer}>
-          <div className={style.howLine}>
-          </div>
+          <div className={style.howLine}></div>
           <div className={style.howCircle}> </div>
           <div className={style.howCircle}> </div>
           <div className={style.howCircle}> </div>
         </div>
         <div className={style.howGrid}>
-              {howCards.map((card, index) => (
-                <div className={style.howCard} key={index}>
-                  <div className={style.howNumber}>{card.number}</div>
-                  <h1 className={style.howTitle}>{card.title}</h1>
-                  <p className={style.howDescription}>{card.description}</p>
-                </div>
-              ))}
+          {howCards.map((card, index) => (
+            <div className={style.howCard} key={index}>
+              <div className={style.howNumber}>{card.number}</div>
+              <h1 className={style.howTitle}>{card.title}</h1>
+              <p className={style.howDescription}>{card.description}</p>
+            </div>
+          ))}
         </div>
         <div className={style.tagContainer}>
-            <Link className={style.linkTag} to={"/createYourPlan"}>
-              Create your plan
-            </Link>
-          </div>
-      </div>
-      <div className={style.footer}>
-                <img className={style.logoImg} src={logo} alt="logoCoffee" />
-                <div className={style.iconContainer}>
-                  <img src={facebookIcon} alt="facebookIcon" />
-                  <img src={instagramIcon} alt="instagramIcon" />
-                  <img src={twitterIcon} alt="twitterIcon" />
-                </div>
+          <Link className={style.linkTag} to={"/createYourPlan"}>
+            Create your plan
+          </Link>
+        </div>
       </div>
     </div>
   );
