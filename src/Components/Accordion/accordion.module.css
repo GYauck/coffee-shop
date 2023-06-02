@@ -1,0 +1,84 @@
+.accordionMenu {
+  width: 730px;
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 48px; */
+  cursor: pointer;
+}
+
+.accordionH1 {
+  color: #83888f;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.accordionH1Disabled {
+  color: #83888f;
+  opacity: 0.5;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.logoRotate {
+  transform: rotate(180deg);
+}
+
+.cardContainer {
+  
+  overflow: hidden;
+  transition: height 0.5s ease;
+  max-height: 0;
+
+}
+
+.cardActive{
+  max-height: 500px;
+  transition: max-height 0.5s ease;
+}
+
+.cardGrid {
+  display: flex;
+  gap: 2vw;
+}
+
+.card {
+  background-color: #f4f1eb;
+  border-radius: 8px;
+  width: 228px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.cardName {
+  color: #333d4b;
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.cardDescription {
+  width: 172px;
+  height: 78px;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.activeCard {
+  background-color: #0E8784;
+}

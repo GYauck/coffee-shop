@@ -1,0 +1,49 @@
+.summaryContainer {
+    width: 730px;
+    height: 208px;
+    background-image: url("../../assets/plan/desktop/bg-order-summary.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.textContainer {
+    width: 602px;
+    height: 114px;
+}
+
+.titleSummary {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.textSummary {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 1vh;
+}
+
+.stateText {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #0E8784;
+    margin: 0;
+    margin-top: 1vh;
+}

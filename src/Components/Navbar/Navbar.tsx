@@ -21,7 +21,7 @@ const Navbar = () => {
           </li>
 
           <li className={style.navLi}>
-            <NavLink to={"/createYourPlan"}>CREATE YOUR PLAN</NavLink>
+            <NavLink to={"/subscribe"}>CREATE YOUR PLAN</NavLink>
           </li>
         </ul>
       </div>

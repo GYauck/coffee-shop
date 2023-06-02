@@ -82,7 +82,7 @@
     width: 1280px;
     height: 562px;
     position: relative;
-    background-image: url("../../assets//about//desktop/bg-quality.png");
+    background-image: url("../../assets/about/desktop/bg-quality.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     display: flex;

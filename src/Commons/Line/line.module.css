@@ -1,0 +1,25 @@
+.howLineContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 760px;
+}
+
+.howLine {
+    background-color: #FDD6BA;
+    width: 740px;
+    height: 2px;
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+}
+
+.howCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #0E8784;
+    background-color: #FEFCF7;
+    z-index: 1;
+}

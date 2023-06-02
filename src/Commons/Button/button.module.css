@@ -1,0 +1,27 @@
+.tagContainer {
+    display: flex;
+    width: 217px;
+    height: 56px;
+    background-color: #0E8784;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.disabled {
+    display: flex;
+    width: 217px;
+    height: 56px;
+    background-color: #E2DEDB;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.linkTag {
+    color: #FEFCF7;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+}

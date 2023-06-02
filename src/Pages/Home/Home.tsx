@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./home.module.css";
 import data from "../../data.json";
+import Line from "../../Commons/Line/Line";
+import Button from "../../Commons/Button/Button";
 
 const Home = () => {
   const [coffees] = useState(data.coffees);
@@ -21,11 +23,7 @@ const Home = () => {
             curated artisan coffees from our best roasters delivered directly to
             your door, at your schedule.
           </p>
-          <div className={style.tagContainer}>
-            <Link className={style.linkTag} to={"/createYourPlan"}>
-              Create your plan
-            </Link>
-          </div>
+          <Button disabled={false} text="Create your plan"/>
         </div>
       </div>
       <div className={style.productsContainer}>
@@ -67,12 +65,7 @@ const Home = () => {
       </div>
       <div className={style.howContainer}>
         <h1 className={style.howH1}>How it works</h1>
-        <div className={style.howLineContainer}>
-          <div className={style.howLine}></div>
-          <div className={style.howCircle}> </div>
-          <div className={style.howCircle}> </div>
-          <div className={style.howCircle}> </div>
-        </div>
+        <Line />
         <div className={style.howGrid}>
           {howCards.map((card, index) => (
             <div className={style.howCard} key={index}>
@@ -82,11 +75,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className={style.tagContainer}>
-          <Link className={style.linkTag} to={"/createYourPlan"}>
-            Create your plan
-          </Link>
-        </div>
+        <Button disabled={false} text="Create your plan"/>
       </div>
     </div>
   );
