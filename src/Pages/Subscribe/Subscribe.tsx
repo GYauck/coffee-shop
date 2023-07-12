@@ -6,10 +6,20 @@ import { Link } from "react-router-dom";
 import Accordion from "../../Components/Accordion/Accordion";
 import OrderSummary from "../../Components/OrderSummary/OrderSummary";
 import Button from "../../Commons/Button/Button";
+import ModalSumary from "../../Components/ModalSummary/ModalSumary";
 
 const Subscribe = () => {
   const [howCards] = useState(data.howItWorks);
   const [accordion] = useState(data.accordion)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const openModal = () => {
+     setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
   
   return (
     <div className={style.subscribeContainer}>
@@ -74,9 +84,9 @@ const Subscribe = () => {
         <div className={style.accordionContainer}>
         <Accordion accordion={accordion}/>
         <OrderSummary />
-        <Button disabled={true} text="Create my plan!"/>
+        <Button disabled={true} text="Create my plan!" linkTo="subscribe" onClick={()=>openModal()}/>
         </div>
-        
+        {isModalOpen && <ModalSumary closeModal={closeModal}/>}
       </div>
     </div>
   );

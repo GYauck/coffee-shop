@@ -6,9 +6,12 @@ import { CardContext } from "../../Context/cardContext";
 interface ButtonProps {
   disabled: boolean;
   text: string;
+  linkTo?: string;
+  /* buttonProp: any; */
+  onClick?: ()=> void
 }
 
-const Button = ({ disabled, text }: ButtonProps) => {
+const Button = ({ disabled, text, linkTo, onClick }: ButtonProps) => {
   
   const { coffeeMethod, coffeeType, amount, grindType, delivery } = useContext(
     CardContext
@@ -28,7 +31,7 @@ const Button = ({ disabled, text }: ButtonProps) => {
   }
   return (
     <div className={style.tagContainer}>
-      <Link className={style.linkTag} to={"/subscribe"}>
+      <Link className={style.linkTag} to={`/${linkTo? linkTo : ""}`} onClick={onClick}>
         {text}
       </Link>
     </div>
