@@ -7,7 +7,6 @@ interface ButtonProps {
   disabled: boolean;
   text: string;
   linkTo?: string;
-  /* buttonProp: any; */
   onClick?: ()=> void
 }
 

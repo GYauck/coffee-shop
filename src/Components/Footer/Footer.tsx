@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../../assets/shared/desktop/logo.svg";
 import facebookIcon from "../../assets/shared/desktop/icon-facebook.svg";
 import instagramIcon from "../../assets/shared/desktop/icon-instagram.svg";

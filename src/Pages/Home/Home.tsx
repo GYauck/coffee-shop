@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import style from "./home.module.css";
 import data from "../../data.json";
 import Line from "../../Commons/Line/Line";
@@ -23,7 +22,7 @@ const Home = () => {
             curated artisan coffees from our best roasters delivered directly to
             your door, at your schedule.
           </p>
-          <Button disabled={false} text="Create your plan"/>
+          <Button disabled={false} text="Create your plan" linkTo="subscribe"/>
         </div>
       </div>
       <div className={style.productsContainer}>
@@ -75,7 +74,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <Button disabled={false} text="Create your plan"/>
+        <Button disabled={false} text="Create your plan" linkTo="subscribe"/>
       </div>
     </div>
   );
