@@ -8,6 +8,10 @@
     border-radius: 6px;
 }
 
+.tagContainer:hover {
+    background-color: #66D2CF;
+}
+
 .disabled {
     display: flex;
     width: 217px;
