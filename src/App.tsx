@@ -6,12 +6,14 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Home from "./Pages/Home/Home";
 import Subscribe from "./Pages/Subscribe/Subscribe";
 import { CardProvider } from "./Context/cardContext";
+import ScrollReset from "./utils/scrollReset";
 
 function App() {
   return (
     <>
       <CardProvider>
         <Navbar />
+        <ScrollReset/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutUs" element={<AboutUs />} />
