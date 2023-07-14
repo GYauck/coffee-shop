@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Line from "../../Commons/Line/Line";
 import style from "./subscribe.module.css";
 import data from "../../data.json";
@@ -7,6 +7,7 @@ import Accordion from "../../Components/Accordion/Accordion";
 import OrderSummary from "../../Components/OrderSummary/OrderSummary";
 import Button from "../../Commons/Button/Button";
 import ModalSumary from "../../Components/ModalSummary/ModalSumary";
+import { CardContext } from "../../Context/cardContext";
 
 const Subscribe = () => {
   const [howCards] = useState(data.howItWorks);
@@ -20,6 +21,10 @@ const Subscribe = () => {
   const closeModal = () => {
     setIsModalOpen(false)
   }
+
+  const { coffeeMethod, coffeeType, amount, grindType, delivery } = useContext(
+    CardContext
+  ) as any;
   
   return (
     <div className={style.subscribeContainer}>
@@ -50,34 +55,24 @@ const Subscribe = () => {
       <div className={style.thirdContainer}>
         <div className={style.planNavbar}>
           <ul className={style.planUl}>
-            <li className={style.planLi}>
-              <Link to="preferences">
-              <span className={style.numberSpan}>01</span> <span className={style.textSpan}>Preferences</span> 
-              </Link>
+            <li>
+              <span className={coffeeMethod? style.numberSpan : style.disabledText }>01</span> <span className={coffeeMethod? style.textSpan : style.disabledText}>Preferences</span> 
               <hr />
             </li>
-            <li className={style.planLi}>
-              <Link to="bean">
-              <span className={style.numberSpan}>02</span> <span className={style.textSpan}>Bean Type</span>
-              </Link>
+            <li>
+              <span className={coffeeType? style.numberSpan : style.disabledText}>02</span> <span className={coffeeType? style.numberSpan : style.disabledText}>Bean Type</span>
               <hr />
             </li>
-            <li className={style.planLi}>
-              <Link to="quantity">
-              <span className={style.numberSpan}>03</span> <span className={style.textSpan}>Quantity</span> 
-              </Link>
+            <li>
+              <span className={amount? style.numberSpan : style.disabledText}>03</span> <span className={amount? style.numberSpan : style.disabledText}>Quantity</span> 
               <hr />
             </li>
-            <li className={style.planLi}>
-              <Link to="grind">
-              <span className={style.numberSpan}>04</span> <span className={style.textSpan}>Grind Option</span>
-              </Link>
+            <li>
+              <span className={grindType? style.numberSpan : style.disabledText}>04</span> <span className={grindType? style.numberSpan : style.disabledText}>Grind Option</span>
               <hr />
             </li>
-            <li className={style.planLi}>
-              <Link to="deliveries">
-              <span className={style.numberSpan}>05</span> <span className={style.textSpan}>Deliveries</span>
-              </Link>
+            <li>
+              <span className={delivery? style.numberSpan : style.disabledText}>05</span> <span className={delivery? style.numberSpan : style.disabledText}>Deliveries</span>
             </li>
           </ul>
         </div>

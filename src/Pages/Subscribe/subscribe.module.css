@@ -95,7 +95,7 @@
 .thirdContainer {
     display: flex;
     justify-content: space-around;
-    width: 100%;   /*  CHECKCKCKCKCKCKCEHCHECK */
+    width: 100%;
     height: 100%;
 }
 
@@ -111,10 +111,6 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-}
-
-.planLi {
-    
 }
 
 .numberSpan {
@@ -133,6 +129,14 @@
     line-height: 32px;
 }
 
+.disabledText {
+    color: #83888F;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}
+
 hr {
     background: #83888F;
     mix-blend-mode: normal;
@@ -144,3 +148,4 @@ hr {
     flex-direction: column;
     align-items: flex-end;
 }
+
