@@ -60,19 +60,19 @@ const Subscribe = () => {
               <hr />
             </li>
             <li>
-              <span className={coffeeType? style.numberSpan : style.disabledText}>02</span> <span className={coffeeType? style.numberSpan : style.disabledText}>Bean Type</span>
+              <span className={coffeeType? style.numberSpan : style.disabledText}>02</span> <span className={coffeeType? style.textSpan : style.disabledText}>Bean Type</span>
               <hr />
             </li>
             <li>
-              <span className={amount? style.numberSpan : style.disabledText}>03</span> <span className={amount? style.numberSpan : style.disabledText}>Quantity</span> 
+              <span className={amount? style.numberSpan : style.disabledText}>03</span> <span className={amount? style.textSpan : style.disabledText}>Quantity</span> 
               <hr />
             </li>
             <li>
-              <span className={grindType? style.numberSpan : style.disabledText}>04</span> <span className={grindType? style.numberSpan : style.disabledText}>Grind Option</span>
+              <span className={grindType? style.numberSpan : style.disabledText}>04</span> <span className={grindType? style.textSpan : style.disabledText}>Grind Option</span>
               <hr />
             </li>
             <li>
-              <span className={delivery? style.numberSpan : style.disabledText}>05</span> <span className={delivery? style.numberSpan : style.disabledText}>Deliveries</span>
+              <span className={delivery? style.numberSpan : style.disabledText}>05</span> <span className={delivery? style.textSpan : style.disabledText}>Deliveries</span>
             </li>
           </ul>
         </div>
