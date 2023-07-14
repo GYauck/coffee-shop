@@ -29,7 +29,7 @@ interface AccordionState {
   }
 
   const Accordion = ({ accordion }: AccordionProps) => {
-    const [state, setState] = useState<AccordionState>({
+    const [indexState, setIndexState] = useState<AccordionState>({
       activeIndices: [],
     });
     
@@ -52,15 +52,15 @@ interface AccordionState {
     }
 
     const handleClick = (index: number) => {
-        if (state.activeIndices.includes(index)) {
-          setState({
-            ...state,
-            activeIndices: state.activeIndices.filter((i) => i !== index),
+        if (indexState.activeIndices.includes(index)) {
+          setIndexState({
+            ...indexState,
+            activeIndices: indexState.activeIndices.filter((i) => i !== index),
           });
         } else {
-          setState({
-            ...state,
-            activeIndices: [...state.activeIndices, index],
+          setIndexState({
+            ...indexState,
+            activeIndices: [...indexState.activeIndices, index],
           });
         }
       };
@@ -72,9 +72,9 @@ interface AccordionState {
         <div key={index}>
             <div onClick={() => {if(!(coffeeMethod === "Capsule" && card.title === "Want us to grind them?")){handleClick(index)} }} className={style.accordionTitle}>
             <div className={`${coffeeMethod === "Capsule" && card.title === "Want us to grind them?"? style.accordionH1Disabled : style.accordionH1 }`}>{card.title}</div>
-          <img src={navIcon} className={`${state.activeIndices.includes(index) ? style.logoRotate : ""}`}  id={index.toString()} alt="navIcon" />
+          <img src={navIcon} className={`${indexState.activeIndices.includes(index) ? style.logoRotate : ""}`}  id={index.toString()} alt="navIcon" />
             </div>
-            {state.activeIndices.includes(index) && (
+            {indexState.activeIndices.includes(index) && (
             <div className={`${style.cardContainer} ${style.cardActive}`}>
               {(index === 0)&& <Cards card={card} handleOption={handleOption1}  />}
               {(index === 1)&& <Cards card={card} handleOption={handleOption2}  />}
