@@ -13,6 +13,7 @@
     width: 100%;
     height: 600px;
     background-image: url("../../assets/home/desktop/image-hero-coffeepress.jpg");
+    
     border-radius: 20px;
     margin-top: 6vh;
 }
@@ -194,6 +195,7 @@
     font-weight: 900;
     font-size: 24px;
     color: #FEFCF7;
+    text-align: center;
 }
 
 .whyCardDescription {
@@ -217,31 +219,6 @@
     font-weight: 900;
     font-size: 24px;
     color: #83888F;
-}
-
-.howLineContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    width: 760px;
-}
-
-.howLine {
-    background-color: #FDD6BA;
-    width: 760px;
-    height: 2px;
-    position: absolute;
-    top: 10px;
-    z-index: -1;
-}
-
-.howCircle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid #0E8784;
-    background-color: #FEFCF7;
 }
 
 .howGrid {
@@ -277,4 +254,128 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+}
+
+/* Responsive  */
+
+@media only screen and (max-width: 768px){
+    body {
+        width: 768px;
+    }
+    .homeContainer {
+        width: 689px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .homeHeader {
+        width: 689px;
+        height: 500px;
+        background-image: url("../../assets/home/tablet/image-hero-coffeepress.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    .textContainer {
+        width: 398px;
+        height: 292px;
+    }
+    .textH1 {
+        font-size: 48px;
+    }
+    .textBody {
+        font-size: 15px;
+        
+    }
+    .productsContainer {
+        display: flex;
+        justify-content: center;
+        height: 927px;
+        
+    }
+    .ourCollection {
+        width: 689px;
+        height: 118px;
+        font-size: 96px;
+    }
+    .productsGrid {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .productCard {
+        display: flex;
+        flex-direction: row;
+        width: 573px;
+        height: 193px;
+    }
+    .coffeeDescription {
+        text-align: start;
+        width: 282px;
+        font-size: 15px;
+    }
+
+    /*  */
+    .whyContainer {
+        width: 688px;
+        border-radius: 10px;
+        height: 1021px;
+        justify-content: space-evenly;
+    }
+    .whyContainer::before {
+        border-radius: 10px;
+        height: 70%;
+    }
+    .whyH1 {
+        font-size: 32px;
+    }
+    .whyGrid {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .whyCard {
+        width: 573px;
+        height: 180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .whyCardImg {
+        width: 56px;
+        height: 56px;
+    }
+    .whyCardTitle {
+        font-size: 24px;
+        width: 255px;
+    }
+    .whyCardDescription {
+        width: 344px;
+        font-size: 15px;
+        text-align: start;
+    }
+    /*  */
+    .howContainer {
+        width: 689px;
+        height: 622px;
+    }
+    .howH1 {
+        width: 255px;
+    }
+    .howGrid {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5vw;
+        margin-bottom: 5vh;
+    }
+    .howCard {
+        width: 223px;
+        height: 371px;
+    }
+    .howTitle {
+        width: 223px;
+        font-size: 28px;
+    }
+    .howDescription {
+        width: 223px;
+        font-size: 15px;
+    }
 }

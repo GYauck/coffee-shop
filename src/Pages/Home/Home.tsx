@@ -35,8 +35,10 @@ const Home = () => {
                 className={style.coffeeImg}
                 alt="coffeeImg"
               />
+              <div className={style.textProducts}>
               <h1 className={style.coffeeName}>{coffee.name}</h1>
               <p className={style.coffeeDescription}>{coffee.description}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -56,8 +58,10 @@ const Home = () => {
                 src={card.image}
                 alt="cardImg"
               />
+              <div className={style.whyText}>
               <h1 className={style.whyCardTitle}>{card.title}</h1>
               <p className={style.whyCardDescription}>{card.description}</p>
+              </div>
             </div>
           ))}
         </div>
