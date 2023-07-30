@@ -1,151 +1,194 @@
 .subscribeContainer {
-    width: 1280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .firstContainer {
-    background-image: url("../../assets/plan/desktop/image-hero-blackcup.jpg");
-    width: 100%;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 6vh;
-    margin-bottom: 15vh;
+  background-image: url("../../assets/plan/desktop/image-hero-blackcup.jpg");
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 6vh;
+  margin-bottom: 15vh;
 }
 
 .firstText {
-    width: 445px;
-    margin-left: 5vw;
+  width: 445px;
+  margin-left: 5vw;
 }
 
 .firstH1 {
-    color: #FEFCF7;
-    font-family: 'Fraunces';
-    font-weight: 900;
-    font-size: 72px;
-    margin: 0;
+  color: #fefcf7;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 72px;
+  margin: 0;
 }
 
 .firstDescription {
-    color: #FEFCF7;
-    font-family: 'Barlow';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+  color: #fefcf7;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 /* Second part */
 
 .secondContainer {
-    width: 100%;
-    height: 653px;
-    background-image: url("../../assets//plan/desktop/bg-steps.png");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 15vh;
+  width: 100%;
+  height: 653px;
+  background-image: url("../../assets//plan/desktop/bg-steps.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15vh;
 }
 
 .secondCenter {
-    margin-left: 5vw;
+  margin-left: 5vw;
 }
 
 .secondGrid {
-    display: flex;
-    flex-direction: row;
-    gap: 4vw;
-    margin-bottom: 5vh;
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  margin-bottom: 5vh;
 }
 
 .secondCard {
-    width: 285px;
-    height: 355px;
+  width: 285px;
+  height: 355px;
 }
 
 .secondNumber {
-    color: #FDD6BA;
-    font-family: 'Fraunces', serif;
-    font-weight: 900;
-    font-size: 72px;
+  color: #fdd6ba;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 72px;
 }
 
 .secondTitle {
-    width: 255px;
-    color: #FEFCF7;
-    font-family: 'Fraunces', serif;
-    font-weight: 900;
-    font-size: 32px;
+  width: 255px;
+  color: #fefcf7;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 32px;
 }
 
 .secondDescription {
-    color: #FEFCF7;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+  color: #fefcf7;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 /* Third part */
 
 .thirdContainer {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
 }
 
 .planNavbar {
-    width: 255px;
-    height: 356px;
+  width: 255px;
+  height: 356px;
 }
 
 .planUl {
-    list-style: none;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .numberSpan {
-    color: #0E8784;
-    font-family: 'Fraunces';
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
+  color: #0e8784;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .textSpan {
-    color: #333D4B;
-    font-family: 'Fraunces';
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
+  color: #333d4b;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .disabledText {
-    color: #83888F;
-    font-family: 'Fraunces';
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
+  color: #83888f;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 hr {
-    background: #83888F;
-    mix-blend-mode: normal;
-    opacity: 0.25;
+  background: #83888f;
+  mix-blend-mode: normal;
+  opacity: 0.25;
 }
 
 .accordionContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
+/* Responsive  */
+
+@media only screen and (max-width: 768px) {
+  .subscribeContainer {
+    width: 768px;
+    display: flex;
+  }
+  .firstContainer {
+    background-image: url("../../assets/plan/tablet/image-hero-blackcup.jpg");
+    background-size: contain;
+    width: 689px;
+    height: 400px;
+    border-radius: 10px;
+  }
+  .firstH1 {
+    font-size: 48px;
+  }
+  .firstDescription {
+    font-size: 15px;
+  }
+  .secondContainer {
+    background-image: url("../../assets/plan/tablet/bg-steps.png");
+    border-radius: 10px;
+    align-items: center;
+  }
+  .secondCenter {
+    margin-left: 0;
+  }
+  .secondCard {
+    width: 223px;
+    height: 367px;
+  }
+  .secondTitle {
+    font-size: 28px;
+    width: 223px;
+  }
+  .secondDescription {
+    font-size: 15px;
+  }
+  .planNavbar {
+    display: none;
+  }
+}

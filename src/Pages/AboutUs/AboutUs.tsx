@@ -3,7 +3,6 @@ import style from "./aboutUs.module.css"
 import data from "../../data.json";
 
 const AboutUs = () => {
-  const [images] = useState(data.aboutUs)
   const [icons] = useState(data.aboutUs.icons)
   const [cards] = useState(data.aboutUs.cards)
   console.log(window.innerWidth)

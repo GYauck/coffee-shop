@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import Line from "../../Commons/Line/Line";
 import style from "./subscribe.module.css";
 import data from "../../data.json";
-import { Link } from "react-router-dom";
 import Accordion from "../../Components/Accordion/Accordion";
 import OrderSummary from "../../Components/OrderSummary/OrderSummary";
 import Button from "../../Commons/Button/Button";
