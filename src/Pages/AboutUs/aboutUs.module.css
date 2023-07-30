@@ -54,6 +54,7 @@
     width: 445px;
     height: 520px;
     border-radius: 8px;
+    background-image: url("../../assets/about/desktop/image-commitment.jpg");
 }
 
 .ourCommitmentText {
@@ -114,6 +115,9 @@
 
 .qualityImg {
     border-radius: 8px;
+    background-image: url("../../assets/about/desktop/image-quality.jpg");
+    width: 445px;
+    height: 474px;
 }
 
 /* Four part headquarters */
@@ -156,4 +160,96 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+}
+
+/* Tablets Responsive */
+@media only screen and (max-width: 768px){
+    /* body {
+        width: 768px;
+    } */
+    .aboutUsContainer {
+        width: 768px;
+    }
+    .aboutUsHeader {
+        width: 689px;
+        background-image: url("../../assets/about/tablet/image-hero-whitecup.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    .headerH1 {
+        font-size: 32px;
+    }
+    .headerDescription {
+        width: 398px;
+        font-size: 15px;
+    }
+    .ourCommitmentContainer {
+        width: 689px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ourCommitmentImg {
+        width: 281px;
+        height: 470px;
+        background-image: url("../../assets/about/tablet/image-commitment.jpg"), lightgray 0px 0px / 100% 100% no-repeat;
+    }
+    .ourCommitmentText {
+        width: 339px;
+        height: 453px;
+    }
+    .ourCommitmentH1 {
+        font-size: 32px;
+    }
+    .ourCommitmentDescription {
+        width: 339px;
+        font-size: 15px;
+    }
+    .qualityContainer {
+        width: 688px;
+        height: 648px;
+        background-image: none;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: end;
+    }
+    .qualityBackground {
+        width: 688px;
+        height: 488px;
+        background-image: url("../../assets/about/tablet/bg-quality.png");
+        border-radius: 10px;
+    }
+    .qualityText {
+        position: absolute;
+        margin-bottom: 5vh;
+        text-align: center;
+    }
+    .qualityH1 {
+        font-size: 32px;
+    }
+    .qualityDescription {
+        width: 540px;
+        font-size: 15px;
+    }
+    .qualityImg {
+        width: 573px;
+        height: 320px;
+        background-image: url("../../assets/about/tablet/image-quality.jpg");
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .headquartersContainer {
+        width: 688px;
+        height: 366px;
+    }
+    .headquartersH1 {
+        font-size: 24px;
+    }
+    .cardH1 {
+        font-size: 24px;
+    }
+    .cardText {
+        font-size: 16px;
+    }
 }
