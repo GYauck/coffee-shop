@@ -13,7 +13,7 @@ git clone https://github.com/GYauck/coffee-shop.git
 npm install
 ```
 
-### _3. Ejecutar el proyecto desde la consola <img align="center" alt="" width="25" height="25" src="https://cdn.icon-icons.com/icons2/2248/PNG/512/console_icon_138727.png" />
+### _3. Ejecutar el proyecto desde la consola <img align="center" alt="" width="25" height="25" src="https://icon-library.com/images/command-prompt-icon/command-prompt-icon-2.jpg" />
 
 ```
 npm start
