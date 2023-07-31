@@ -32,3 +32,9 @@
         width: 467px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .howLineContainer {
+        display: none;
+    }
+}

@@ -379,3 +379,134 @@
         font-size: 15px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    body {
+        width: 100vw;
+    }
+    .homeHeader {
+        background-image: url("../../assets/home/mobile/image-hero-coffeepress.jpg");
+        width: 327px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        margin-top: 15vh;
+    }
+    .textContainer {
+        width: 279px;
+        height: fit-content;
+    }
+    .textH1 {
+        font-size: 40px;
+    }
+    .textBody {
+        font-size: 15px;
+        width: 279px;
+        height: 101px;
+    }
+    .productsContainer {
+        width: 100%;
+        height: 1321px;
+        display: flex;
+        justify-content: center;
+    }
+    .ourCollection {
+        width: 375px;
+        height: 75px;
+        font-size: 40px;
+    }
+    .productsGrid {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .productCard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+    .coffeeName {
+        text-align: center;
+    }
+    .coffeeDescription {
+        text-align: center;
+        width: 282px;
+        font-size: 15px;
+    }
+    .whyContainer {
+        width: 90vw;
+        border-radius: 10px;
+        height: 1021px;
+        justify-content: space-evenly;
+        margin-top: 10vh;
+    }
+    .whyContainer::before {
+        border-radius: 10px;
+        height: 70%;
+    }
+    .whyH1 {
+        font-size: 32px;
+    }
+    .whyGrid {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .whyCard {
+        width: 70vw;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+    }
+    .whyCardImg {
+        width: 56px;
+        height: 56px;
+    }
+    .whyCardTitle {
+        font-size: 24px;
+        width: 255px;
+    }
+    .whyCardDescription {
+        width: 344px;
+        font-size: 15px;
+        text-align: start;
+    }
+    /*  */
+    .howContainer {
+        width: 327px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .howH1 {
+        width: 100%;
+    }
+    .howGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+        margin-bottom: 5vh;
+        align-items: center;
+        
+    }
+    .howCard {
+        width: 223px;
+        height: 371px;
+    }
+    .howTitle {
+        width: 100%;
+        font-size: 28px;
+    }
+    .howDescription {
+        width: 100%;
+        font-size: 15px;
+    }
+  }
