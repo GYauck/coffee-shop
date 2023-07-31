@@ -163,10 +163,10 @@
 }
 
 /* Tablets Responsive */
-@media only screen and (max-width: 768px){
-    /* body {
-        width: 768px;
-    } */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        width: 100vw;
+    }
     .aboutUsContainer {
         width: 768px;
     }
