@@ -253,3 +253,114 @@
         font-size: 16px;
     }
 }
+@media screen and (max-width: 767px) {
+    .aboutUsContainer {
+        width: 375px;
+    }
+    .aboutUsHeader {
+        width: 327px;
+        background-image: url("../../assets/about/mobile/image-hero-whitecup.jpg");
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .textContainer {
+        margin-top: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+    .headerH1 {
+        width: fit-content;
+        font-size: 28px;
+    }
+    .headerDescription {
+        width: fit-content;
+        font-size: 15px;
+    }
+    .ourCommitmentContainer {
+        width: 689px;
+        height: 901px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ourCommitmentImg {
+        width: 327px;
+        height: 400px;
+        background-image: url("../../assets/about/mobile/image-commitment.jpg"), lightgray 0px 0px / 100% 100% no-repeat;
+    }
+    .ourCommitmentText {
+        width: 339px;
+        height: 453px;
+        text-align: center;
+    }
+    .ourCommitmentH1 {
+        font-size: 32px;
+    }
+    .ourCommitmentDescription {
+        width: 339px;
+        font-size: 15px;
+    }
+    .qualityContainer {
+        width: 327px;
+        height: 587px;
+        background-image: none;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: end;
+    }
+    .qualityBackground {
+        width: 327px;
+        height: 509px;
+        background-image: url("../../assets/about/mobile/bg-quality.png");
+        border-radius: 10px;
+    }
+    .qualityText {
+        width: 279px;
+        height: fit-content;
+        position: absolute;
+        margin-bottom: 5vh;
+        text-align: center;
+    }
+    .qualityH1 {
+        font-size: 28px;
+    }
+    .qualityDescription {
+        width: 279px;
+        font-size: 15px;
+    }
+    .qualityImg {
+        width: 279px;
+        height: 156px;
+        background-image: url("../../assets/about/mobile/image-quality.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .headquartersContainer {
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+        height: 1044px;
+    }
+    .headquartersH1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .headquartersGrid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+    .cardH1 {
+        font-size: 24px;
+    }
+    .cardText {
+        font-size: 16px;
+    }
+}
