@@ -82,3 +82,26 @@
 .activeCard {
   background-color: #0E8784;
 }
+
+@media screen and (max-width: 767px) {
+  .accordionMenu {
+    width: 328px;
+  }
+  .cardGrid {
+    flex-direction: column;
+  }
+  .card {
+    width: 328px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .accordionH1 {
+    font-size: 24px;
+  }
+  .accordionH1Disabled {
+    font-size: 24px;
+  }
+  .cardActive {
+    max-height: fit-content;
+  }
+}

@@ -195,3 +195,64 @@ hr {
     display: none;
   }
 }
+@media screen and (max-width: 767px) {
+  .subscribeContainer {
+    width: 327px;
+    display: flex;
+  }
+  .firstContainer {
+    background-image: url("../../assets/plan/mobile/image-hero-blackcup.jpg");
+    background-size: contain;
+    width: 327px;
+    height: 400px;
+    border-radius: 10px;
+    align-items: center;
+  }
+  .firstText {
+    width: 279px;
+    margin-left: 0;
+    text-align: center;
+    
+  }
+  .firstH1 {
+    width: 279px;
+    font-size: 40px;
+  }
+  .firstDescription {
+    width: 279px;
+    font-size: 15px;
+  }
+  .secondContainer {
+    background-image: url("../../assets/plan/mobile/bg-steps.png");
+    border-radius: 10px;
+    align-items: center;
+    width: 375px;
+    height: 1028px;
+  }
+  .secondCenter {
+    margin-left: 0;
+  }
+  .secondGrid {
+    flex-direction: column;
+  }
+  .secondCard {
+    width: 327px;
+    height: 252px;
+    text-align: center;
+  }
+  .secondTitle {
+    width: 327px;
+    font-size: 28px;
+  }
+  .secondDescription {
+    width: 327px;
+    font-size: 15px;
+  }
+  .planNavbar {
+    display: none;
+  }
+  .accordionContainer {
+    width: 328px;
+    align-items: center;
+  }
+}

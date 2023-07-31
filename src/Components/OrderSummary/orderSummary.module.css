@@ -47,3 +47,15 @@
     margin: 0;
     margin-top: 1vh;
 }
+
+@media screen and (max-width: 767px) {
+    .summaryContainer {
+        background-image: url("../../assets/plan/mobile/bg-order-summary.png");
+        width: 328px;
+        height: 450px;
+    }
+    .textContainer {
+        width: 279px;
+        height: 274px;
+    }
+}
